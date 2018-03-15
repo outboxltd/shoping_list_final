@@ -19,12 +19,14 @@ import { ItemService } from './item.service';
 import { MauserlistComponent } from './mauserlist/mauserlist.component';
 import { ItemsComponent } from './items/items.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ItemComponent } from './item/item.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'items', component: ItemsComponent },
+  { path: 'items/:id', component: ItemComponent },
   { path: 'main', component: MainComponent },
   // { path: '**', redirectTo: '/login', pathMatch: 'full' }
 
@@ -43,7 +45,8 @@ const appRoutes: Routes = [
     FooterComponent,
     MauserlistComponent,
     ItemsComponent,
-    NavbarComponent
+    NavbarComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
