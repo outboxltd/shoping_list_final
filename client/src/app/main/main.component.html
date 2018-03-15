@@ -1,3 +1,28 @@
-<ul>
+<!-- <ul>
   <li *ngFor="let item of items">{{item | json}}</li>
-</ul>
+
+
+    <li *ngFor="let item of items">{{item.date}}</li>
+
+</ul> -->
+
+
+<table style="width:100%">
+  <tr>
+    <th>date</th>
+    <th>coloer</th>
+    <th>price</th>
+    <th>4</th>
+    <th>5</th>
+
+
+  </tr>
+  <tr *ngFor="let item of items" >
+    <td>{{item._id}}</td>
+    <td>{{item.itemName}}</td>
+    <td>{{item.itemColor}}</td>
+    <td>{{item.itemPrice}}</td>
+
+  </tr>
+
+</table>
