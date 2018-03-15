@@ -18,6 +18,7 @@ import { ItemService } from './item.service';
 
 import { MauserlistComponent } from './mauserlist/mauserlist.component';
 import { ItemsComponent } from './items/items.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     MauserlistComponent,
-    ItemsComponent
+    ItemsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
