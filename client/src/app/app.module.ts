@@ -26,7 +26,7 @@ const appRoutes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'items', component: ItemsComponent },
   { path: 'main', component: MainComponent },
-  { path: '**', redirectTo: '/login', pathMatch: 'full' }
+  // { path: '**', redirectTo: '/login', pathMatch: 'full' }
 
 ];
 
